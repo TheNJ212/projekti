@@ -1,0 +1,28 @@
+html{
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+    margin-bottom: 100px;
+}
+
+footer{
+	bottom: 0;
+}
+
+#pretraga{
+	display: none;
+}
+.fab{
+	font-size: 1.3em;
+}
+
+.pomerajAnchor{
+	padding-top: 110px;
+	 margin-top:-110px;
+}
+.pomerajAnchor2{
+	padding-top: 70px;
+	 margin-top:-70px;
+}

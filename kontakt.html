@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Njuz.net</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+</head>
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="kontakt">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="my-modal-title">Popunite podatke</h5>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="form-group">
+                        <label for="ime">Ime i prezime:</label>
+                        <input type="text" class="form-control" id="ime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">E-mail:</label>
+                        <input type="email" class="form-control" id="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Telefon:</label>
+                        <input type="tel" class="form-control" id="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">Tekst poruke:</label>
+                        <textarea id="my-input" class="form-control" rows="7"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Odustani</button>
+                <button type="submit" id="poslata" class="btn btn-primary" data-dismiss="modal">Pošalji</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body class="bg-light">
+    <div class="full-witdth bg-primary">
+        <div class="container">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark sticky-top mb-4">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sazimajuciKontejner">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="sazimajuciKontejner">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">NASLOVNA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="najnovije.html">NAJNOVIJE VESTI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sport.html">SPORT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hronika.html">HRONIKA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="politika.html">POLITIKA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="svet.html">SVET</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            REDAKCIJA
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="onama.html">O nama</a>
+                            <a class="dropdown-item" href="kontakt.html">Kontakt</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <div id="pretraga">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Termin za pretragu"
+                                aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Traži</button>
+                        </form>
+                    </div>
+                    <li class="nav-item" id="search">
+                        <i class="fas fa-search nav-link"></i>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="alert alert-success alert-dismissible d-none w-100">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Uspešno ste poslali poruku!</strong>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">KONTAKT</h5>
+                        <hr>
+                        <h6>ADRESA REDAKCIJE</h6>
+                        <p class="card-text">
+
+
+                            <span class="d-block">Vlajkovićeva 8, 11000 Beograd,</span>
+                            <span class="d-block">Republika Srbija</span>
+                            <span class="d-block">Redakcija i dopisnički servis </span>
+                            <span class="d-block">+381 11 6357 100 </span>
+
+
+
+
+
+
+
+
+                        </p>
+                        <p class="card-text">
+                            <span class="d-block">webredakcija@njuz.net</span>
+                            <span class="d-block">redakcija@njuz.net </span>
+
+                        </p>
+                        <h6>MARKETING </h6>
+                        <p class="card-text">
+
+
+
+
+                            Email: marketing@njuz.net +381 11 4420 462
+
+
+
+
+                        </p>
+                        <h6>ADVERTISING</h6>
+                        <p class="card-text">
+                            Email: advertising@njuz.net +381 11 6357 071
+                        </p>
+                        <button class="btn btn-primary mb-4" type="button" data-toggle="modal"
+                            data-target="#kontakt">Pišite nam</button>
+                        <div class="card p-1 d-none d-md-block">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4180088631333!2d20.46398791553579!3d44.81304817909869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aafe3b77439%3A0x6c8cd832b210bdec!2z0JLQu9Cw0ZjQutC-0LLQuNGb0LXQstCwIDgsINCR0LXQvtCz0YDQsNC0IDExMDAw!5e0!3m2!1ssr!2srs!4v1556919885472!5m2!1ssr!2srs"
+                                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card p-1 d-block d-md-none">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.4180088631333!2d20.46398791553579!3d44.81304817909869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aafe3b77439%3A0x6c8cd832b210bdec!2z0JLQu9Cw0ZjQutC-0LLQuNGb0LXQstCwIDgsINCR0LXQvtCz0YDQsNC0IDExMDAw!5e0!3m2!1ssr!2srs!4v1556919885472!5m2!1ssr!2srs"
+                                width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+
+                <div class="card-group mb-4 text-center d-flex flex-row justify-content-around">
+                    <div class="card bg-primary py-3 w-100">
+
+                        <a href="https://www.facebook.com/njuznet" class="text-light"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                    </div>
+                    <div class="card bg-info py-3 w-100">
+
+                        <a href="https://twitter.com/njuznet" class="text-light"> <i class="fab fa-twitter"></i></a>
+
+                    </div>
+                    <div class="card bg-danger py-3 w-100">
+
+                        <a href="https://www.youtube.com/" class="text-light"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <div class="card bg-warning py-3 w-100">
+
+                        <a href="https://www.instagram.com/" class="text-light"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Najčitanije</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Najnovije</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <ul class="list-group list-group-flush ">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <li class="list-group-item"><a href="" class="text-dark"> OVO JE MILO ILIĆ (31) KOJI JE
+                                        LIKVIDIRAN U SAČEKUŠI U PODGORICI! Rat škaraljskog i kavačkog klana BUKTI i
+                                        odnosi nove
+                                        žrtve!</a">
+                                        <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+                                <li class="list-group-item"><a href="" class="text-dark">UDARIO GA VIŠE OD 50 PUTA: Gren
+                                        slem
+                                        šampion tukao prijatelja naočigled ćerke i trudne žene, koja je doživela
+                                        pobačaj! Čeka
+                                        se reakcija NOVAKA ĐOKOVIĆA!</a>
+                                    <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+                                <li class="list-group-item"><a href="" class="text-dark">VUČIĆ NAKON SASTANKA SA
+                                        MOGERINIJEVOM:
+                                        Ne želim da pravimo politički cirkus, mi želimo da očuvamo stabilnost i mir!
+                                        Poručio sam
+                                        joj da nema nastavka dijaloga bez ukidanja taksi</a>
+                                    <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <li class="list-group-item"><a href="" class="text-dark">UDARIO GA VIŠE OD 50 PUTA: Gren
+                                        slem
+                                        šampion tukao prijatelja naočigled ćerke i trudne žene, koja je doživela
+                                        pobačaj! Čeka
+                                        se reakcija NOVAKA ĐOKOVIĆA!</a>
+                                    <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+                                <li class="list-group-item"><a href="" class="text-dark">VUČIĆ NAKON SASTANKA SA
+                                        MOGERINIJEVOM:
+                                        Ne želim da pravimo politički cirkus, mi želimo da očuvamo stabilnost i mir!
+                                        Poručio sam
+                                        joj da nema nastavka dijaloga bez ukidanja taksi</a>
+                                    <small class="text-muted d-block">Pre 43min</small>
+                                </li>
+
+                                <div class="card-footer">
+                                    <a href="">Sve najnovije vesti...</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <div class="card text-white bg-info mb-3 border-light">
+                    <h6 class="card-header">Preporučujemo</h6>
+                    <a href="svet.html#s2" class="text-light">
+                        <div class="card-body">
+
+                            <h5 class="card-title">NEKIMA PLATA I DO 100.000 DINARA!</h5>
+                            <p class="card-text">Ovo su najtraženija zanimanja u Kragujevcu, a radnika NEMA DOVOLJNO!
+                            </p>
+
+
+                        </div>
+                        <img class="card-img-bottom" src="img/preporuka.jpg" alt="Card image cap">
+                    </a>
+                </div>
+
+                <div class="card mb-4">
+                    <h6 class="card-header">Prognoza</h6>
+                    <div class="card-body">
+
+                        <div id="prognoza">
+                            <a class="weatherwidget-io" href="https://forecast7.com/sr/44d7920d45/belgrade/"
+                                data-label_1="BEOGRAD" data-label_2="Vremeska prognoza" data-icons="Climacons Animated"
+                                data-theme="weather_one">BEOGRAD Vremeska prognoza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <h6 class="card-header">Kursna lista</h6>
+                    <div class="card-body">
+
+                        <table class="table table-light">
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/zastave/eu.png" alt=""> EUR 118.00</td>
+                                    <td><img src="img/zastave/us.png" alt=""> USD 105.10</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/zastave/ch.png" alt=""> &nbsp;CHF 103.58</td>
+                                    <td><img src="img/zastave/gb.png" alt=""> GBP 136.63</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/zastave/au.png" alt=""> AUD 73.40</td>
+                                    <td><img src="img/zastave/ba.png" alt=""> BAM 60.33</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/zastave/hr.png" alt=""> HRK 15.92</td>
+                                    <td><img src="img/zastave/ca.png" alt=""> CAD 78.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer class="bg-primary text-center position-absolute w-100">
+        <span class="text-light">Njuz.net</span>
+    </footer>
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery.js">
+    </script>
+    <!-- Include all compiled plugins -->
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+        !function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'weatherwidget-io-js');
+
+
+        $("#search").click(function () {
+            $("#pretraga").fadeToggle();
+            $("#pretraga").css("display", "block");
+        });
+
+        $("#poslata").click(
+            function () {
+                if ($("textarea").val() != "" && $("#ime").val() != "" && $("#mail").val() != "") {
+                    $(".alert").removeClass("d-none");
+                    $(".alert").addClass("d-block");
+                }
+                else{
+                    alert("Popunite Ime i prezime, E-mail i unesite tekst poruke!")
+                }
+
+            }
+
+        )
+    </script>
+</body>
+
+</html>

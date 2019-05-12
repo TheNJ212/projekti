@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Njuz.net</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="icon" type="image/png"  href="img/favicon.ico">
+</head>
+
+<body class="bg-light" data-spy="scroll" data-target=".sekundarna" data-offset="20">
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+        id="zaslike">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img class="img-fluid" src="" alt="" id="slika">
+            </div>
+        </div>
+    </div>
+
+    <div class="full-witdth bg-primary">
+        <div class="container">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+
+    </div>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark ">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sazimajuciKontejner">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="sazimajuciKontejner">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">NASLOVNA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="najnovije.html">NAJNOVIJE VESTI</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="sport.html">SPORT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hronika.html">HRONIKA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="politika.html">POLITIKA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="svet.html">SVET</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                REDAKCIJA
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="onama.html">O nama</a>
+                                <a class="dropdown-item" href="kontakt.html">Kontakt</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <div id="pretraga">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Termin za pretragu"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Traži</button>
+                            </form>
+                        </div>
+                        <li class="nav-item" id="search">
+                            <i class="fas fa-search nav-link"></i>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </nav>
+        <div class="container bg-danger bg-light py-1">
+            <nav class="sekundarna nav">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-danger my-2 my-sm-0 " href="#fudbal">Fudbal</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link btn btn-outline-success my-2 my-sm-0 " href="#kosarka">Košarka</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary my-2 my-sm-0 " href="#ostalo">Ostali sportovi</a>
+                </li>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div>
+                    <hr>
+                    <div id="fudbal" class="pomerajAnchor"></div>
+                    <div class="card mb-4">
+                        <img src="img/vest3/jovic.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                                <h5><span class="badge badge-danger">Fudbal</span></h5> 
+                                <small class="text-muted">Pre 2h 32min</small>
+                            <h3 class="card-title">SRPSKI ŠOU U FRANKFURTU: Jović maestralno krunisao akciju u kojoj su
+                                učestvovali Gaćinović i Kostić za vođstvo protiv Čelsija</h3>
+                            <p class="card-text">Srpska veza za vođstvo Ajntrahta protiv Čelsija! Strelac je Luka Jović!
+                            </p>
+                            <p class="card-text">Igrao se 23. minut prvog meča polufinala Lige Evrope u Frankfurtu kada
+                                su trojica srpskih reprezentativaca režirala vođstvo Ajntrahta.</p>
+                            <p class="card-text">Akcija je tekla ovako: Gaćinović - Jović - Kostić - Jović, koji je
+                                fenomenalnim udarcem glavom sa 12, 13 metara matirao Kepu!</p>
+                            <p class="card-text">Joviću je to deveti gol u Ligi Evrope i sada je samo na korak od lidera
+                                na listi strelaca, Olivijea Žirua, upravo iz Čelsija.</p>
+
+                            <div class="text-center">
+                                <a data-target="#galerija" data-toggle="collapse" href="#" id="prosiri" class="btn btn-outline-primary mb-4">
+                                    Pogledajte galeriju slika sa utakmice
+                                </a>
+                            </div>
+
+                            <div id="galerija" class="collapse hide">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/chelsea.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Loftus-Cheek.jpg" alt=""
+                                            type="button" data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Pedro-0.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Giroud.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Emerson.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Willian.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Jorginho.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/David-Luiz.jpg" alt=""
+                                            type="button" data-toggle="modal" data-target="#zaslike">
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Christensen.jpg" alt=""
+                                            type="button" data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Arrizabalaga.jpg" alt=""
+                                            type="button" data-toggle="modal" data-target="#zaslike">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Azpilicueta.jpg" alt=""
+                                            type="button" data-toggle="modal" data-target="#zaslike">
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                        <img class="img-thumbnail" src="img/galerija/Kante.jpg" alt="" type="button"
+                                            data-toggle="modal" data-target="#zaslike">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="fudbal2" class="pomerajAnchor"></div>
+                    <div class="card mb-4">
+                        <img src="img/vestslajder4.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                                <h5><span class="badge badge-danger">Fudbal</span></h5> 
+                                <small class="text-muted">Pre 2h 59min</small>
+                            <h3 class="card-title">CELA PLANETA JE ČEKALA DA SE JAVI IZ BOLNICE Iker Kasiljas se oglasio prvi put posle srčanog udara: Evo šta je španski golman poručio</h3>
+                            <p class="card-text">Legendarni španski golman Iker Kasiljas prvi put se oglasio nakon što je danas doživeo srčani udar.</p>
+                            <p class="card-text">Kako je objavila španska Marka, Kasiljas je svojoj porodici kratko rekao da je "potpuno miran i siguran".</p>
+                            <p class="card-text">"Smiren sam", poruka je koju je Kasiljas poslao svojoj porodici čim je došao u posed mobilnog telefona u bolnici u Portu.</p>
+                            <p class="card-text">Kasiljasu je pozlilo na jutrošnjem treningu u kampu Porta.</p>
+                            <p class="card-text">Hitno je prevezen u bolnicu gde je konstatovano da je pretrpeo infarkt izazvan zakrčenjem desne koronarne arterije.</p>
+                            <p class="card-text">Posle operacije Kasiljas se oseća dobro i van životne opasnosti je.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="kosarka" class="pomerajAnchor"></div>
+                    <div class="card mb-4">
+                        <img src="img/vest5/sale.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                                <h5><span class="badge badge-success">Košarka</span></h5> 
+                                <small class="text-muted">Pre 2h 59min</small>
+                            <h3 class="card-title">REČI SALETA ĐORĐEVIĆA TRESU SRBIJU I CRNU GORU: Niko posle finala ABA
+                                lige nije poslao ovako snažnu poruku!</h3>
+                            <p class="card-text">Finalna serija regionalne košarkaške ABA lige između Crvene zvezde i
+                                Budućnosti donela je sve ono što sport i košarka ne zaslužuju.</p>
+                            <p class="card-text">Mržnja koja je odisala sa tribina u Beogradu i Podgorici, pokušaj
+                                fizičkog obračuna sa igračima i trenerima, pljuvanje, vređanje, saopštenja... svakako su
+                                bacili senku na dominaciju Zvezde u finalu.</p>
+                            <p class="card-text">Sve ono što se dešavalo u borbi za titulu bilo je praćeno i od strane
+                                aktuelnog selektora Srbije Aleksandra Đorđevića.</p>
+                            <p class="card-text">Njegova poruka je i te kako snažna.</p>
+                            <p class="card-text">"Stavljanje znaka pitanja između dva bratska naroda je poraz. Košarka i
+                                sport su metafora života", izjavio je popularni Sale Nacionale za Sportski žurnal.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="ostalo" class="pomerajAnchor"></div>
+                    <div class="card mb-4">
+                        <img src="img/vest7/mma.jpg" class="card-img-top">
+
+                        <div class="card-body">
+                                <small class="text-muted">Pre 26min</small>
+                            <h5><span class="badge badge-dark">MMA</span></h5> 
+                            <h3 class="card-title">BRUTALAN NOKAUT! UDARIO GA PESNICOM KAO MALJEM: Nesrećni borac od
+                                udarca IZGUBIO SVEST, sudija odmah prekinuo borbu!</h3>
+                            <p class="card-text">Na MMA spektaklu u Birmingemu viđen je jedan od najstrašnijih nokauta.
+                            </p>
+                            <p class="card-text">U borbi koju je organizovao Belator u ovom engleskom gradu Rejmond
+                                Danijels je brutalno nokautirao Vikera Barosa.</p>
+                            <p class="card-text">Danijels je skočio, napravio okret i zatim pesnicom snažno udario
+                                Barosa u glavu. Istog momenta nesrećni borac je pao i izgubio svest, a sudija je
+                                prekinuo meč.</p>
+                            <iframe width="100%" height="388px" src="https://www.youtube.com/embed/kO4MqRiyJfM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <p class="card-text">Podsetimo, Danijels je imao veoma uspešnu karijeru u kik-boksu.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+
+                <div class="card-group mb-4 text-center d-flex flex-row justify-content-around">
+                    <div class="card bg-primary py-3 w-100">
+
+                        <a href="https://www.facebook.com/njuznet" class="text-light"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                    </div>
+                    <div class="card bg-info py-3 w-100">
+
+                        <a href="https://twitter.com/njuznet" class="text-light"> <i class="fab fa-twitter"></i></a>
+
+                    </div>
+                    <div class="card bg-danger py-3 w-100">
+
+                        <a href="https://www.youtube.com/" class="text-light"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <div class="card bg-warning py-3 w-100">
+
+                        <a href="https://www.instagram.com/" class="text-light"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Najčitanije</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Najnovije</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <ul class="list-group list-group-flush ">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <li class="list-group-item"><a href="" class="text-dark"> OVO JE MILO ILIĆ (31) KOJI JE
+                                        LIKVIDIRAN U SAČEKUŠI U PODGORICI! Rat škaraljskog i kavačkog klana BUKTI i
+                                        odnosi nove
+                                        žrtve!</a">
+                                        <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+                                <li class="list-group-item"><a href="" class="text-dark">UDARIO GA VIŠE OD 50 PUTA: Gren
+                                        slem
+                                        šampion tukao prijatelja naočigled ćerke i trudne žene, koja je doživela
+                                        pobačaj! Čeka
+                                        se reakcija NOVAKA ĐOKOVIĆA!</a>
+                                    <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+                                <li class="list-group-item"><a href="" class="text-dark">VUČIĆ NAKON SASTANKA SA
+                                        MOGERINIJEVOM:
+                                        Ne želim da pravimo politički cirkus, mi želimo da očuvamo stabilnost i mir!
+                                        Poručio sam
+                                        joj da nema nastavka dijaloga bez ukidanja taksi</a>
+                                    <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <li class="list-group-item"><a href="" class="text-dark">UDARIO GA VIŠE OD 50 PUTA: Gren
+                                        slem
+                                        šampion tukao prijatelja naočigled ćerke i trudne žene, koja je doživela
+                                        pobačaj! Čeka
+                                        se reakcija NOVAKA ĐOKOVIĆA!</a>
+                                    <small class="text-muted d-block">Pre 37min</small>
+                                </li>
+                                <li class="list-group-item"><a href="" class="text-dark">VUČIĆ NAKON SASTANKA SA
+                                        MOGERINIJEVOM:
+                                        Ne želim da pravimo politički cirkus, mi želimo da očuvamo stabilnost i mir!
+                                        Poručio sam
+                                        joj da nema nastavka dijaloga bez ukidanja taksi</a>
+                                    <small class="text-muted d-block">Pre 43min</small>
+                                </li>
+
+                                <div class="card-footer">
+                                    <a href="">Sve najnovije vesti...</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <div class="card text-white bg-info mb-3 border-light">
+                    <h6 class="card-header">Preporučujemo</h6>
+                    <a href="svet.html#s2" class="text-light">
+                        <div class="card-body">
+
+                            <h5 class="card-title">NEKIMA PLATA I DO 100.000 DINARA!</h5>
+                            <p class="card-text">Ovo su najtraženija zanimanja u Kragujevcu, a radnika NEMA DOVOLJNO!
+                            </p>
+
+
+                        </div>
+                        <img class="card-img-bottom" src="img/preporuka.jpg" alt="Card image cap">
+                    </a>
+                </div>
+
+                <div class="card mb-4">
+                    <h6 class="card-header">Prognoza</h6>
+                    <div class="card-body">
+
+                        <div id="prognoza">
+                            <a class="weatherwidget-io" href="https://forecast7.com/sr/44d7920d45/belgrade/"
+                                data-label_1="BEOGRAD" data-label_2="Vremeska prognoza" data-icons="Climacons Animated"
+                                data-theme="weather_one">BEOGRAD Vremeska prognoza</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <h6 class="card-header">Kursna lista</h6>
+                    <div class="card-body">
+
+                        <table class="table table-light">
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/zastave/eu.png" alt=""> EUR 118.00</td>
+                                    <td><img src="img/zastave/us.png" alt=""> USD 105.10</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/zastave/ch.png" alt=""> &nbsp;CHF 103.58</td>
+                                    <td><img src="img/zastave/gb.png" alt=""> GBP 136.63</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/zastave/au.png" alt=""> AUD 73.40</td>
+                                    <td><img src="img/zastave/ba.png" alt=""> BAM 60.33</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/zastave/hr.png" alt=""> HRK 15.92</td>
+                                    <td><img src="img/zastave/ca.png" alt=""> CAD 78.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer class="bg-primary text-center position-absolute w-100">
+        <span class="text-light">Njuz.net</span>
+    </footer>
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery.js">
+    </script>
+    <!-- Include all compiled plugins -->
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+        !function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'weatherwidget-io-js');
+
+
+        $("#search").click(function () {
+            $("#pretraga").fadeToggle();
+            $("#pretraga").css("display", "block");
+        });
+
+        $(".sekundarna .nav-item a[href^='#']").click(function (e) {
+            e.preventDefault();
+
+            var position = $($(this).attr("href")).offset().top;
+
+            $("body, html").animate({
+                scrollTop: position
+            }, "fast");
+        });
+
+        $("img[data-target='#zaslike']").click(function () {
+
+            var src = $(this).attr('src');
+            $("#slika").attr("src", src);
+
+        });
+
+
+    </script>
+</body>
+
+</html>
